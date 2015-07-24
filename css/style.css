@@ -21,8 +21,8 @@ nav ul li:hover {
 	background-color: #6d3572;
 }
 
-nav ul li p { 
-	color: white; 
+nav ul li p {
+	color: white;
 	font-weight: 300;
 }
 
@@ -40,7 +40,7 @@ body {
 
 section .content { background-color: rgba(0,0,0,0.8); }
 
-section p { 
+section p {
 	color: white;
 	padding-top: 2rem;
 	padding-left: 14px;
@@ -48,7 +48,7 @@ section p {
 	font-weight: 300;
 }
 
-section h2 { 
+section h2 {
 	font-weight: 300;
 	padding-left: 14px;
 	padding-top: 6rem;
@@ -72,6 +72,7 @@ section h2 {
 	height: 615px;
 	position: absolute;
 	z-index: -1;
+	max-width: 1500px;
 }
 
 .jumbotron-image {
@@ -83,6 +84,7 @@ section h2 {
 	background-size: cover;
 	position: absolute;
 	z-index: -2;
+	max-width: 1500px;
 }
 
 #img1,#img2,#img3,#img4,#img5 { display: none; }
@@ -137,7 +139,7 @@ section h2 {
 	position: relative;
 }
 
-.dots-nav:hover { 
+.dots-nav:hover {
 	cursor: pointer;
 	-webkit-filter: invert(0%);
 	filter: invert(0%);
