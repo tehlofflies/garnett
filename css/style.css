@@ -126,13 +126,10 @@ section h2 {
 	background-color: red;
 }
 
-.dots-nav { 
+.dots-nav {
 	bottom: 50px;
 	left: 46.5%; 
-	position: absolute;
-}
-
-.dots-nav li {
+	z-index: 20;
 	-webkit-filter: invert(80%);
 	filter: invert(80%);
 	list-style: none;
@@ -140,7 +137,7 @@ section h2 {
 	position: relative;
 }
 
-.dots-nav li:hover { 
+.dots-nav:hover { 
 	cursor: pointer;
 	-webkit-filter: invert(0%);
 	filter: invert(0%);

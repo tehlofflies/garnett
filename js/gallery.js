@@ -13,7 +13,6 @@ $(function() {
 });
 
 
-
 function cycleItems(someArray) {
 
 }
@@ -48,5 +47,12 @@ $(document).ready(function() {
 	$("#gallery").click(function() {
 		location.href = featuredList[clickCount];
 		return false;
+	});
+
+	$(".dots-nav").click(function() {
+		var index = this.id.slice(-1);
+		$("#img" + clickCount).fadeOut(300);
+		clickCount = index;
+		$("#img" + index).fadeIn(200);
 	});
 })
