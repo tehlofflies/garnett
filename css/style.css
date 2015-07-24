@@ -126,11 +126,15 @@ section h2 {
 	background-color: red;
 }
 
+.dots-nav { 
+	bottom: 50px;
+	left: 46.5%; 
+	position: absolute;
+}
+
 .dots-nav li {
 	-webkit-filter: invert(80%);
 	filter: invert(80%);
-	left: 46.5%;
-	bottom: 50px;
 	list-style: none;
 	display: inline-block;
 	position: relative;
