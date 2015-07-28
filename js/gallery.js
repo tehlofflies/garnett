@@ -1,4 +1,4 @@
-/* 
+/*
 Little image scroller for jumbotron
 */
 
