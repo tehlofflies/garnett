@@ -12,17 +12,18 @@
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
     <!-- jQuery and Javascript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/angular.min.js"></script>
     <script type="text/javascript" src="js/gallery.js"></script>
     <script type="text/javascript" src="js/database.js"></script>
     <script src="js/hexagon.js" defer></script>
   </head>
 
-  <body>
+  <body ng-app="browseApp">
     <nav>
       <div class="content">
         <ul>
-          <li class="action-item"><a href=""><p>SANDBOX</p></a></li>
-          <li><a href="#browse"><p>Browse</p></a></li>
+          <li class="action-item"><a href="/"><p>SANDBOX</p></a></li>
+          <li><a href="/browse.html"><p>Browse</p></a></li>
           <li><a href="#something"><p>Subscribe</p></a></li>
         </ul>
         <ul class="right">
@@ -35,12 +36,53 @@
       <p>What's this?</p>
       <canvas id="hex" />
     </div>
+    <div class="content game-content">
+      <div class="filters">
+        <div class="filter-block">
+          <div class="filter-block-header">
+            <h3>Genres</h3>
+          </div>
+          <div class="filter-block-filters">
+            <form>
+              <input type="checkbox" name="genre" value="action">Action<br>
+              <input type="checkbox" name="genre" value="adventure">Adventure<br>
+            </form>
+          </div>
+        </div>
+        <div class="filter-block">
+          <div class="filter-block-header">
+            <h3>Mode</h3>
+          </div>
+          <div class="filter-block-filters">
+            <form>
+              <input type="checkbox" name="mode" value="single-player">Single Player<br>
+              <input type="checkbox" name="mode" value="multiplayer">Multiplayer<br>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="grid" ng-controller="browseController">
+        <div class="game-card" ng-repeat="game in games">
+          <card game="game"></card>
+        </div>
+      </div>
+    </div>
     <footer>
       <div class="content">
         <a href="#">About Us</a>
         <a href="#">Terms</a>
       </div>
     </footer>
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/browseController.js"></script>
+
+    <!-- Directives -->
+    <script src="js/directives/card.js"></script>
+    <link src="js/directives/card.html">
   </body>
 
 </html>
