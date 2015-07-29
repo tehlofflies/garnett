@@ -12,9 +12,16 @@ $(function() {
 	$("#img0").css("background", "url(" + featuredList[0] + ") center center no-repeat");
 });
 
+function cycleOut(index,fadeSpeed) {
+	//fades jumbotron image in/out, changes dot color
+	$("#img" + index).fadeOut(fadeSpeed);
+	$("#dot" + index).css("-webkit-filter", "invert(80%)");
+}
 
-function cycleItems(someArray) {
-
+function cycleIn(index,fadeSpeed) {
+	// same
+	$("#img" + index).fadeIn(fadeSpeed);
+	$("#dot" + index).css("-webkit-filter", "invert(0%)");
 }
 
 $(document).ready(function() {
@@ -22,25 +29,25 @@ $(document).ready(function() {
 	var clickCount = 0;
 	$("#next-arrow").click(function() {
 		if (clickCount < 5) {
-			$("#img" + clickCount).fadeOut(300);
+			cycleOut(clickCount, 300);
 			clickCount++;
-			$("#img" + clickCount).fadeIn(200);
+			cycleIn(clickCount, 200);
 		} else {
-			$("#img" + clickCount).fadeOut(300);
+			cycleOut(clickCount, 300);
 			clickCount = 0;
-			$("#img" + clickCount).fadeIn(200);
+			cycleIn(clickCount, 200);
 		}
 	});
 
 	$("#prev-arrow").click(function() {
 		if (clickCount > 0) {
-			$("#img" + clickCount).fadeOut(300);
+			cycleOut(clickCount, 300);
 			clickCount--;
-			$("#img" + clickCount).fadeIn(200);
+			cycleIn(clickCount, 200);
 		} else {
-			$("#img" + clickCount).fadeOut(300);
+			cycleOut(clickCount, 300);
 			clickCount = 5;
-			$("#img" + clickCount).fadeIn(200);
+			cycleIn(clickCount, 200);
 		}
 	});
 
@@ -51,8 +58,8 @@ $(document).ready(function() {
 
 	$(".dots-nav").click(function() {
 		var index = this.id.slice(-1);
-		$("#img" + clickCount).fadeOut(300);
+		cycleOut(clickCount, 300);
 		clickCount = index;
-		$("#img" + index).fadeIn(200);
+		cycleIn(clickCount, 200);
 	});
 })
