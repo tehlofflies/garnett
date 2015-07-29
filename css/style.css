@@ -1,12 +1,10 @@
 /* Navbar styling */
-
 nav {
-    position: fixed;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.75);
-    z-index: 200;
+	position: fixed;
+	top: 0;
+	background-color: rgba(0,0,0,0.75);
+	z-index: 200;
 }
-
 
 /* nav ul li.action-item {
 	color: white;
@@ -19,144 +17,136 @@ nav ul li.action-item:hover {
 */
 
 nav ul li:hover {
-    cursor: pointer;
-    background-color: #6d3572;
+	cursor: pointer;
+	background-color: #6d3572;
 }
 
 nav ul li p {
-    color: white;
-    font-weight: 300;
+	color: white;
+	font-weight: 300;
 }
 
 
 /* General Things */
-
 body {
-    background: url(../img/blur-bg.jpg) #34201f 50% 0 fixed;
-    z-index: -3;
+	background: url(../img/blur-bg.jpg)
+		#34201f
+		50% 0
+		fixed;
+	z-index: -3;
 }
 
-.content {
-    width: 80%;
-}
+.content { width: 80%; }
 
-section .content {
-    background-color: rgba(0, 0, 0, 0.8);
-}
+section .content { background-color: rgba(0,0,0,0.8); }
 
 section p {
-    color: white;
-    padding-top: 2rem;
-    padding-left: 14px;
-    padding-right: 14px;
-    font-weight: 300;
+	color: white;
+	padding-top: 2rem;
+	padding-left: 14px;
+	padding-right: 14px;
+	font-weight: 300;
 }
 
 section h2 {
-    font-weight: 300;
-    padding-left: 14px;
-    padding-top: 6rem;
+	font-weight: 300;
+	padding-left: 14px;
+	padding-top: 6rem;
 }
 
 
 /* Jumbotron */
-
 #gallery {
-    margin-top: 60px;
-    height: 615px;
-    z-index: 10;
+	margin-top: 60px;
+	height: 615px;
+	z-index: 10;
 }
 
-#gallery:hover {
-    cursor: pointer;
-}
+#gallery:hover { cursor: pointer; }
 
 .vignette {
-    background: radial-gradient(transparent, rgba(0, 0, 0, 1));
-    top: 0rem;
-    margin-top: 60px;
-    width: 80%;
-    height: 615px;
-    position: absolute;
-    z-index: -1;
-    max-width: 1500px;
+	background: radial-gradient(transparent, rgba(0,0,0,1));
+	top: 0rem;
+	margin-top: 60px;
+	width: 80%;
+	height: 615px;
+	position: absolute;
+	z-index: -1;
+	max-width: 1500px;
 }
 
 .jumbotron-image {
-    top: 0rem;
-    bottom: 0rem;
-    width: 80%;
-    margin-top: 60px;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: absolute;
-    z-index: -2;
-    max-width: 1500px;
+	top: 0rem;
+	bottom: 0rem;
+	width: 80%;
+	margin-top: 60px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	z-index: -2;
+	max-width: 1500px;
 }
 
-#img1,
-#img2,
-#img3,
-#img4,
-#img5 {
-    display: none;
-}
+#img1,#img2,#img3,#img4,#img5 { display: none; }
 
 .jumbotron h1 {
-    position: relative;
-    color: white;
-    padding-top: 15rem;
-    padding-left: 8rem;
-    margin-bottom: 3rem;
-    font-weight: 300;
-    z-index: 100;
+	position: relative;
+	color: white;
+	padding-top: 15rem;
+	padding-left: 8rem;
+	margin-bottom: 3rem;
+	font-weight: 300;
+	z-index: 50;
 }
 
 #next-arrow {
-    background: url(../img/next-arrow.png) no-repeat;
-    -webkit-filter: invert(10%);
-    filter: invert(10%);
-    right: 10%;
-    width: 73px;
-    height: 73px;
-    bottom: 250px;
-    position: absolute;
+	background: url(../img/next-arrow.png) no-repeat;
+	-webkit-filter: invert(10%);
+	filter: invert(10%);
+	right: 10%;
+	width: 73px;
+	height: 73px;
+	bottom: 250px;
+	position: absolute;
+	z-index: 100;
 }
 
 #prev-arrow {
-    background: url(../img/prev-arrow.png) no-repeat;
-    -webkit-filter: invert(10%);
-    filter: invert(10%);
-    left: 10%;
-    width: 73px;
-    height: 73px;
-    bottom: 250px;
-    position: absolute;
+	background: url(../img/prev-arrow.png) no-repeat;
+	-webkit-filter: invert(10%);
+	filter: invert(10%);
+	left: 10%;
+	width: 73px;
+	height: 73px;
+	bottom: 250px;
+	position: absolute;
+	z-index: 100;
 }
 
-#next-arrow:hover,
-#prev-arrow:hover {
-    cursor: pointer;
-    -webkit-filter: invert(100%);
-    filter: invert(100%);
-    background-color: red;
+#next-arrow:hover,#prev-arrow:hover {
+	cursor: pointer;
+	-webkit-filter: invert(100%);
+	filter: invert(100%);
+	background-color: #92ca8d;
 }
 
 .dots-nav {
-    bottom: 50px;
-    left: 46.5%;
-    z-index: 20;
-    -webkit-filter: invert(80%);
-    filter: invert(80%);
-    list-style: none;
-    display: inline-block;
-    position: relative;
+	bottom: 50px;
+	left: 46.5%;
+	-webkit-filter: invert(80%);
+	filter: invert(80%);
+	list-style: none;
+	display: inline-block;
+	position: relative;
+	z-index: 100;
 }
 
+#dot0 { -webkit-filter: invert(0%); filter: invert(0%); }
+
 .dots-nav:hover {
-    cursor: pointer;
-    -webkit-filter: invert(0%);
-    filter: invert(0%);
+	cursor: pointer;
+	-webkit-filter: invert(0%);
+	filter: invert(0%);
 }
 
 /* browse page */
@@ -201,3 +191,18 @@ section h2 {
 .game-card p {
     padding: 5px;
 }
+
+/* Everything else */
+
+#game0 {
+	background-size: contain;
+	width: 100%;
+}
+
+.content p { text-align: center; }
+
+.column-left { float: left; width: 33%; }
+
+.column-center { display: inline-block; width: 33%; }
+
+.column-right { float: right; width: 33%; }
