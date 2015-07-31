@@ -1,4 +1,4 @@
-app.directive('card', function() {
+app1.directive('card', function() {
   return {
     restrict: 'E',
     scope: {

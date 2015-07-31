@@ -1,4 +1,4 @@
-app.controller('browseController', ['$scope', function($scope){
+app1.controller('browseController', ['$scope', function($scope){
 	$scope.games = [
 	{
 		name: 'Fez',

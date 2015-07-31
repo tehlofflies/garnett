@@ -150,6 +150,7 @@ section h2 {
 }
 
 /* browse page */
+
 .browse {
 	padding-top: 60px;
 }
@@ -178,6 +179,7 @@ section h2 {
 
 .filter-block-header {
     height: auto;
+    margin-left: 5px;
 }
 
 .game-card {
