@@ -95,91 +95,47 @@ related to the body, headers, etc. */
 	filter: invert(0%);
 }
 
+
 /* Everything else */
+.columns { 
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+#game-tile {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 30px;
+}
 
 #game-img {
 	background-size: contain;
 	width: 100%;
 }
 
-.content p { text-align: center; }
-
-.columns { columns: 3; }
-
-/* browse page */
-
-.browse {
-    padding-top: 60px;
+#game-name {
+	padding: 0px;
+	padding-top: 5px;
+	padding-left: 5px;
+	float: left;
 }
 
-.game-content {
-    min-height: 400px;
+#game-price {
+	padding: 0px;
+	padding-top: 5px;
+	padding-right: 5px;
+	float: right;
 }
 
-.filters {
-    float: left;
-    width: 10%;
-    min-width: 100px;
+#trending .content { background-color: rgba(0,0,0,0.75); }
+
+/* Footer */
+footer .content {
+	background-color: rgba(255,255,255,0.5);
+	color: #411f44;
 }
 
-.grid {
-    float: right;
-    width: 85%;
-}
-
-.filter-block {
-    width: 100%;
-    height: auto;
-    padding: 3px;
-    border: 1px solid purple;
-}
-
-}
-
-/* Game Card */
-
-.game-card {
-    display: inline-block;
-    width: 300px;
-    height: 200px;
-    background-color: teal;
-    margin: 9px;
-    padding: 0;
-}
-
-.game-card p {
-    padding: 5px;
-    text-align: left;
-    color: white;
-}
-
-.game-info {
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    backface-visibility: hidden;
-    transition: transform 0.3s, opacity 0.3s;
-}
-
-.game-card:hover .game-info {
-    opacity: 1;
-    transform: translate(10px, 10px);
-}
-
-.game-details {
-    height: 100%;
-    width: 60%;
-    float: left;
-    background-color: rgba(0,0,0,0.6);
-}
-
-.hex-ratings-vert {
-    height: 100%;
-    width: 40%;
-    float: right;
-    background-color: rgba(0,0,0,0.6);
-}
-
-.hex-ratings-vert p {
-    padding-left: 1rem;
-    text-align: left;
+footer ul { margin: 0; }
