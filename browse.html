@@ -30,10 +30,12 @@
         </ul>
       </div>
     </nav>
+
     <div class="browse content">
       <h1>Browse</h1>
       <canvas id="hex" />
     </div>
+
     <div class="content game-content">
       <div class="filters">
         <div class="filter-block">
@@ -63,9 +65,11 @@
           </div>
         </div>
       </div>
+
       <ul class="grid" ng-controller="browseController">
         <li class="game-card" ng-repeat="game in games">
           <div class="game-info">
+          <div class="game-details">
             <h2>{{ game.name }}</h2>
             <p>Developer: {{ game.dev }}</p>
           </div>
@@ -77,9 +81,11 @@
             <p>S: {{ game.ratings[4] }}</p>
             <p>M: {{ game.ratings[5] }}</p>
           </div>
+          </div>
         </li>
       </ul>
     </div>
+
     <footer>
       <div class="content">
         <a href="#">About Us</a>
