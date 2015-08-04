@@ -91,7 +91,7 @@ related to the body, headers, etc. */
 
 .dots-nav:hover {
 	cursor: pointer;
-	-webkit-filter: invert(0%);
+	-webkit-filter: invert(0%) !important; 
 	filter: invert(0%);
 }
 
@@ -134,9 +134,6 @@ related to the body, headers, etc. */
     border: 1px solid purple;
 }
 
-.filter-block-header {
-    height: auto;
-    margin-left: 5px;
 }
 
 /* Game Card */
@@ -186,4 +183,3 @@ related to the body, headers, etc. */
 .hex-ratings-vert p {
     padding-left: 1rem;
     text-align: left;
-}
