@@ -182,18 +182,6 @@ section h2 {
     margin-left: 5px;
 }
 
-.game-card {
-    display: inline-block;
-    width: 300px;
-    height: 200px;
-    background-color: teal;
-    margin: 9px;
-}
-
-.game-card p {
-    padding: 5px;
-}
-
 /* Everything else */
 
 #game0 {
@@ -208,3 +196,44 @@ section h2 {
 .column-center { display: inline-block; width: 33%; }
 
 .column-right { float: right; width: 33%; }
+
+/* Game Card */
+
+.game-card {
+    display: inline-block;
+    width: 300px;
+    height: 200px;
+    background-color: teal;
+    margin: 9px;
+}
+
+.game-card p {
+    padding: 5px;
+    padding: 0;
+    text-align: left;
+    color: white;
+}
+
+.game-info {
+    height: 100%;
+    width: 60%;
+    float: left;
+    background-color: rgba(0,0,0,0.6);
+    visibility: hidden;
+}
+
+.hex-ratings-vert {
+    height: 100%;
+    width: 40%;
+    float: right;
+    background-color: rgba(0,0,0,0.6);
+    visibility: hidden;
+}
+
+.hex-ratings-vert p {
+    padding-left: 1rem;
+}
+
+.game-card:hover .game-info, .game-card:hover .hex-ratings-vert {
+    visibility: visible;
+}
