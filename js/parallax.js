@@ -6,7 +6,7 @@ $(function() {
 
 	$(window).scroll(function() {
 
-		var FACTOR = 0.35;
+		var FACTOR = 0.55;
 		var $jumbotron = $(".jumbotron-image:visible");
 
 		var distanceScrolled = Math.max(0, $(window).scrollTop());

@@ -237,3 +237,14 @@ section h2 {
 .game-card:hover .game-info, .game-card:hover .hex-ratings-vert {
     visibility: visible;
 }
+
+/* Everything else */
+
+#game-img {
+	background-size: contain;
+	width: 100%;
+}
+
+.content p { text-align: center; }
+
+.columns { columns: 3; }
