@@ -196,15 +196,11 @@ section h2 {
 
 /* Everything else */
 
-#game0 {
+#game-img {
 	background-size: contain;
 	width: 100%;
 }
 
 .content p { text-align: center; }
 
-.column-left { float: left; width: 33%; }
-
-.column-center { display: inline-block; width: 33%; }
-
-.column-right { float: right; width: 33%; }
+.columns { columns: 3; }
