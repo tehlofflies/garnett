@@ -16,42 +16,36 @@ browse.controller('browseController', ['$scope', function($scope){
 		name: 'Mafia II',
 		dev: 'Someone',
 		ratings: ['6.5', '9.25', '7.29', '7', '5', '9'],
-		genres: ['action']
+		genres: ['action', 'RPG', 'FPS']
 	},
 	{
-		name: "Assassin's Creed",
+		name: "Assassin's Creed Unity",
 		dev: 'Ubisoft',
 		ratings: ['6.5', '9.25', '7.29', '7', '5', '9'],
 		genres: ['action', 'adventure']
 	}];
 
-	$scope.activeFilter = [];
+	$scope.activeFilters = [];
 
 	$scope.addFilter = function(filterValue) {
-		var i = $.inArray(filterValue, $scope.activeFilter);
+		var i = $.inArray(filterValue, $scope.activeFilters);
 		if (i > -1) {
-			$scope.activeFilter.splice(i,1);
+			$scope.activeFilters.splice(i,1);
 		}
 		else {
-			$scope.activeFilter.push(filterValue);
+			$scope.activeFilters.push(filterValue);
 		}
 	}
 
 	$scope.gameFilter = function(game) {
-		var filtered = false;
-		if ($scope.activeFilter.length > 0) {
-			for (g in game.genres) {
-				if ($.inArray(g, $scope.activeFilter) > -1) {
-					filtered = true;
+		if ($scope.activeFilters.length > 0) {
+			for (i = 0; i < game.genres.length; i++) {
+				if ($.inArray(game.genres[i], $scope.activeFilters) > -1) {
+					return game;
 				}
 			}
-		}
-		console.log(filtered);
-		if (filtered == false) {
-			return game;
-		}
-		else {
 			return;
 		}
+		return game;
 	}
 }])
