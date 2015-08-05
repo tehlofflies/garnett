@@ -130,7 +130,7 @@ section .content { background-color: rgba(0,0,0,0.8); }
 
 section p {
 	color: white;
-	padding-top: 2rem;
+	padding-top: 50px;
 	padding-left: 14px;
 	padding-right: 14px;
 	font-weight: 300;
@@ -139,5 +139,6 @@ section p {
 section h2 {
 	font-weight: 300;
 	padding-left: 14px;
-	padding-top: 6rem;
+	padding-top: 35px;
+	padding-bottom: 14px;
 }

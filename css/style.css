@@ -91,11 +91,24 @@ related to the body, headers, etc. */
 
 .dots-nav:hover {
 	cursor: pointer;
-	-webkit-filter: invert(0%);
+	-webkit-filter: invert(0%) !important; 
 	filter: invert(0%);
 }
 
 /* Everything else */
+.columns { 
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+#game-tile {
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 30px;
+}
 
 #game-img {
 	background-size: contain;
@@ -105,3 +118,27 @@ related to the body, headers, etc. */
 .content p { text-align: center; }
 
 .columns { columns: 3; }
+
+#game-name {
+	padding: 0px;
+	padding-top: 5px;
+	padding-left: 5px;
+	float: left;
+}
+
+#game-price {
+	padding: 0px;
+	padding-top: 5px;
+	padding-right: 5px;
+	float: right;
+}
+
+#trending .content { background-color: rgba(0,0,0,0.75); }
+
+/* Footer */
+footer .content {
+	background-color: rgba(255,255,255,0.5);
+	color: #411f44;
+}
+
+footer ul { margin: 0; }
