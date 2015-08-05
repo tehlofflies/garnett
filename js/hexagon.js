@@ -1,5 +1,5 @@
 var numberOfSides = 6,
-    circumradius = 70,
+    circumradius = 60,
     xCenter = 140,
     yCenter = 100,
     borderColor = "white",

@@ -12,6 +12,7 @@
     float: left;
     width: 10%;
     min-width: 100px;
+    margin: 37px 0;
 }
 
 .grid {
@@ -76,6 +77,38 @@
 }
 
 .hex-ratings-vert p {
-    padding-left: 1rem;
+    padding-left: 15px;
+    padding-top: 3px;
+    padding-bottom: 3px;
     text-align: left;
+}
+
+/* custom button */
+
+.btn {
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 10px 10px;
+    display: inline-block;
+    margin: 40px 30px;
+    letter-spacing: 1px;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.btn-1 {
+    border: 3px solid #fff;
+    color: #fff;
+}
+
+.btn-1a:hover, .btn-1a:active {
+    color: purple;
+    background: #fff;
 }

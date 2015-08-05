@@ -7,7 +7,7 @@
     <!-- Basic page styling -->
     <link rel="stylesheet" type="text/css" href="css/base.css">
     <!-- User styling -->
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/browseStyle.css">
     <!-- FONT -->
     <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
     <!-- jQuery and Javascript -->
@@ -17,7 +17,7 @@
     <script src="js/hexagon.js" defer></script>
   </head>
 
-  <body ng-app="browseApp">
+  <body  ng-app="browseApp">
     <nav>
       <div class="content">
         <ul>
@@ -36,7 +36,7 @@
       <canvas id="hex" />
     </div>
 
-    <div class="content game-content">
+    <div class="content game-content"  ng-controller="browseController">
       <div class="filters">
         <div class="filter-block">
           <div class="filter-block-header">
@@ -44,9 +44,9 @@
           </div>
           <div class="filter-block-filters">
             <form>
-              <input type="checkbox" name="genre" value="action">Action
+              <input type="checkbox" ng-click="addFilter('action')">Action
               <br>
-              <input type="checkbox" name="genre" value="adventure">Adventure
+              <input type="checkbox" ng-click="addFilter('adventure')">Adventure
               <br>
             </form>
           </div>
@@ -66,12 +66,13 @@
         </div>
       </div>
 
-      <ul class="grid" ng-controller="browseController">
-        <li class="game-card" ng-repeat="game in games">
+      <ul class="grid">
+        <li class="game-card" ng-repeat="game in games | filter:gameFilter">
           <div class="game-info">
           <div class="game-details">
             <h2>{{ game.name }}</h2>
             <p>Developer: {{ game.dev }}</p>
+            <button class="btn btn-1 btn-1a">Learn More</button>
           </div>
           <div class="hex-ratings-vert">
             <p>G: {{ game.ratings[0] }}</p>
@@ -84,6 +85,7 @@
           </div>
         </li>
       </ul>
+      <p>active filters: {{activeFilter}}
     </div>
 
     <footer>
