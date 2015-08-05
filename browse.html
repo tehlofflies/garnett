@@ -44,10 +44,10 @@
           </div>
           <div class="filter-block-filters">
             <form>
-              <input type="checkbox" ng-click="addFilter('action')">Action
-              <br>
-              <input type="checkbox" ng-click="addFilter('adventure')">Adventure
-              <br>
+              <input type="checkbox" ng-click="addFilter('action')">Action<br>
+              <input type="checkbox" ng-click="addFilter('adventure')">Adventure<br>
+              <input type="checkbox" ng-click="addFilter('RPG')">RPG<br>
+              <input type="checkbox" ng-click="addFilter('FPS')">FPS<br>
             </form>
           </div>
         </div>
@@ -69,19 +69,19 @@
       <ul class="grid">
         <li class="game-card" ng-repeat="game in games | filter:gameFilter">
           <div class="game-info">
-          <div class="game-details">
-            <h2>{{ game.name }}</h2>
-            <p>Developer: {{ game.dev }}</p>
-            <button class="btn btn-1 btn-1a">Learn More</button>
-          </div>
-          <div class="hex-ratings-vert">
-            <p>G: {{ game.ratings[0] }}</p>
-            <p>C: {{ game.ratings[1] }}</p>
-            <p>U: {{ game.ratings[2] }}</p>
-            <p>A: {{ game.ratings[3] }}</p>
-            <p>S: {{ game.ratings[4] }}</p>
-            <p>M: {{ game.ratings[5] }}</p>
-          </div>
+            <div class="game-details">
+              <h2>{{ game.name }}</h2>
+              <p>Developer: {{ game.dev }}</p>
+              <button class="btn btn-1 btn-1a">Learn More</button>
+            </div>
+            <div class="hex-ratings-vert">
+              <p>G: {{ game.ratings[0] }}</p>
+              <p>C: {{ game.ratings[1] }}</p>
+              <p>U: {{ game.ratings[2] }}</p>
+              <p>A: {{ game.ratings[3] }}</p>
+              <p>S: {{ game.ratings[4] }}</p>
+              <p>M: {{ game.ratings[5] }}</p>
+            </div>
           </div>
         </li>
       </ul>
