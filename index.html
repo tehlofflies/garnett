@@ -66,15 +66,28 @@
 		<section id="new-releases" ng-controller="newGames">
 			<div class="content">
 				<h2>New Releases</h2>
-				<div class="columns">
-					<div id="game-tile" ng-repeat="game in games">
-						<a ng-href="{{ game.url }}"><img id="game-img" ng-src="{{ game.img }}"></a>
-						<p id="game-name">{{ game.name }}</p>
+				<ul class="img-grid">
+					<li id="game-tile" ng-repeat="game in games">
+						<div>
+							<figure class="hover-style">
+								<img id="game-img" ng-src="{{ game.img }}">
+
+								<div id="figcaption"> 
+									<p>{{ game.description }}</p>
+									<a ng-href="{{ game.url }}">More</a>
+								</div>
+							</figure>
+						</div>
+
+						<a ng-href="{{ game.url }}"><p id="game-name">{{ game.name }}</p></a>
+
+						<!-- edit to promote subscription when price is hovered
 						<p id="game-price">{{ game.price | currency }}</p>
-						<p>{{ game.description }}</p>
+						-->
+
 						<div style="clear: both;"></div>
-					</div>
-				</div>
+					</li>
+				</ul>
 			</div>
 		</section>
 

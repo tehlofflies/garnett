@@ -28,7 +28,7 @@ app.controller('newGames', ['$scope', function($scope) {
 		name: 'Kidnapped',
 		img: 'http://cdn.akamai.steamstatic.com/steam/apps/382300/header.jpg',
 		url: 'http://cdn.akamai.steamstatic.com/steam/apps/382300/header.jpg',
-		description: 'Kidnapped is a psychological story-driven horror game, featuring emphasis on exploration, puzzle solving and combat. Kidnapped dynamically changes as the player progresses, and aims to unnerve the player. Traverse a two hundred year old manor, dark damp caves, an eerie forest and more.',
+		description: 'Kidnapped is a psychological story-driven horror game, featuring emphasis on exploration, puzzle solving and combat. Kidnapped dynamically changes as the player progresses, and aims to unnerve the player.',
 		genre: 'adventure, action, indie, horror',
 		price: 6.99
 	},
@@ -36,7 +36,7 @@ app.controller('newGames', ['$scope', function($scope) {
 		name: 'Zotrix',
 		img: 'http://cdn.akamai.steamstatic.com/steam/apps/343280/header.jpg',
 		url: 'http://cdn.akamai.steamstatic.com/steam/apps/343280/header.jpg',
-		description: 'Zotrix is a modern take on the classic arcade shooter. The game introduces resource trading economy and system of upgrades between number of space stations bringing the classic experience into modern generation. Aliens are attacking and Solar Division Command needs You!',
+		description: 'Zotrix is a modern take on the classic arcade shooter. The game introduces resource trading economy and system of upgrades between number of space stations bringing the classic experience into modern generation.',
 		genre: 'action, indie, strategy, simulation, RPG',
 		price: 12.99
 	},
@@ -44,7 +44,7 @@ app.controller('newGames', ['$scope', function($scope) {
 		name: 'Victor Vran',
 		img: 'http://cdn.akamai.steamstatic.com/steam/apps/345180/header.jpg?t=1438338190',
 		url: 'http://cdn.akamai.steamstatic.com/steam/apps/345180/header.jpg?t=1438338190',
-		description: 'Victor Vran is the isometric action-RPG where your skill is just as essential as your character build and gear. Experience intense combat action: dodge, jump and unleash powerful skills to finish off your enemies!',
+		description: 'Victor Vran is the isometric action-RPG where your skill is just as essential as your character build and gear. Dodge, jump and unleash powerful skills to finish off your enemies!',
 		genre: 'adventure, action, RPG, indie',
 		price: 19.99
 	}

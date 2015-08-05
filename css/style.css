@@ -96,33 +96,56 @@ related to the body, headers, etc. */
 }
 
 /* Everything else */
-.columns { 
-	-webkit-column-count: 3;
-	-moz-column-count: 3;
-	column-count: 3;
+.img-grid { 
 	padding-left: 4px;
 	padding-right: 4px;
 }
 
-#game-tile {
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-bottom: 30px;
+figure {
+	margin-left: 10px;
+	margin-right: 10px;
+	position: relative;
+}
+
+#game-tile { 
+	margin-bottom: 30px; 
+	display: inline-block;
+	position: relative;
+	width: 33.33%;
 }
 
 #game-img {
-	background-size: contain;
-	width: 100%;
+	max-width: 100%;
+	display: block;
+	position: relative;
 }
 
-.content p { text-align: center; }
+#game-tile #figcaption {
+	background-size: contain;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.7);
+	color: white;
+}
 
-.columns { columns: 3; }
+#game-tile #figcaption p{
+	padding: 10px;
+	line-height: 1.4;
+}
+
+#game-tile #figcaption a {
+	text-align: center;
+	padding: 5px 10px;
+	border-radius: 2px;
+	display: inline-block;
+	background: purple;
+	color: white;
+}
 
 #game-name {
 	padding: 0px;
 	padding-top: 5px;
-	padding-left: 5px;
+	padding-left: 15px;
 	float: left;
 }
 
@@ -131,6 +154,21 @@ related to the body, headers, etc. */
 	padding-top: 5px;
 	padding-right: 5px;
 	float: right;
+}
+
+.hover-style #figcaption {
+	height: 100%;
+	width: 100%;
+	text-align: center;
+	opacity: 0;
+	-webkit-transition: opacity 0.3s;
+	-moz-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+#game-tile:hover .hover-style #figcaption { 
+	cursor: pointer;
+	opacity: 1;
 }
 
 #trending .content { background-color: rgba(0,0,0,0.75); }
