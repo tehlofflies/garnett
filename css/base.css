@@ -68,8 +68,10 @@ p {
 nav {
 	height: 60px;
 	width: 100%;
+	/*
 	position: fixed;
 	top: 0;
+	*/
 	background-color: rgba(0,0,0,0.75);
 	z-index: 200;
 }

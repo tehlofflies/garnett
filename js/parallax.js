@@ -1,5 +1,6 @@
 /*
-Parallax written to work with a jumbotron with scrolling images
+Parallax written to work with a jumbotron with changing images.
+Also works with a nav bar that eventually pins to the top.
 */
 
 $(function() {

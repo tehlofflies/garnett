@@ -23,18 +23,27 @@
 	</head>
 
 	<body ng-app="PopulateHomePage">
-		<nav>
+
+		<div id="header">
 			<div class="content">
-				<ul>
-					<li class="action-item"><a href="/"><p>SANDBOX</p></a></li>
-					<li><a href="/browse.html"><p>Browse</p></a></li>
-					<li><a href="#something"><p>About</p></a></li>
-				</ul>
-				<ul class="right">
-					<li><a href="#signin"><p>Sign In</p></a></li>
-				</ul>
+				<h1>sandbox</h1>
 			</div>
-		</nav>
+
+			<nav>
+				<div class="content">
+					<ul>
+						<li class="action-item"><a href="/"><p>SANDBOX</p></a></li>
+						<li><a href="/browse.html"><p>Browse</p></a></li>
+						<li><a href="#something"><p>About</p></a></li>
+					</ul>
+					<ul class="right">
+						<li><a href="#signin"><p>Sign In</p></a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+
+		
 
 		<div class="jumbotron" id="top">
 			<div class="content" id="gallery">
@@ -72,9 +81,10 @@
 							<figure class="hover-style">
 								<img id="game-img" ng-src="{{ game.img }}">
 
-								<div id="figcaption"> 
+								<div class="figcaption"> 
 									<p>{{ game.description }}</p>
 									<a ng-href="{{ game.url }}">More</a>
+									<p id="overflow"></p>
 								</div>
 							</figure>
 						</div>

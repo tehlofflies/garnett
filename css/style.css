@@ -96,14 +96,7 @@ related to the body, headers, etc. */
 }
 
 /* Everything else */
-<<<<<<< HEAD
 .img-grid { 
-=======
-.columns {
-	-webkit-column-count: 3;
-	-moz-column-count: 3;
-	column-count: 3;
->>>>>>> origin/master
 	padding-left: 4px;
 	padding-right: 4px;
 }
@@ -116,8 +109,8 @@ figure {
 
 #game-tile { 
 	margin-bottom: 30px; 
+	list-style: none;
 	display: inline-block;
-	position: relative;
 	width: 33.33%;
 }
 
@@ -127,26 +120,42 @@ figure {
 	position: relative;
 }
 
-#game-tile #figcaption {
+#game-tile .figcaption {
 	background-size: contain;
 	top: 0;
 	left: 0;
 	background: rgba(0,0,0,0.7);
 	color: white;
+	overflow: hidden;
+	position: absolute;
 }
 
-#game-tile #figcaption p{
-	padding: 10px;
+#game-tile .figcaption p{
+	padding: 20px;
 	line-height: 1.4;
 }
 
-#game-tile #figcaption a {
+#game-tile .figcaption a {
 	text-align: center;
 	padding: 5px 10px;
 	border-radius: 2px;
-	display: inline-block;
 	background: purple;
 	color: white;
+	display: inline-block;
+	position: absolute;
+	bottom: 8%;
+	left: 42%;
+	z-index: 150;
+}
+
+#overflow { 
+	padding: 0;
+	background-image: linear-gradient(to bottom, transparent, black);
+	position: absolute;
+	bottom: -10;
+	left: 0;
+	width: 100%;
+	height: 20%;
 }
 
 #game-name {
@@ -163,20 +172,16 @@ figure {
 	float: right;
 }
 
-.hover-style #figcaption {
+.hover-style .figcaption {
 	height: 100%;
 	width: 100%;
-	text-align: center;
 	opacity: 0;
 	-webkit-transition: opacity 0.3s;
 	-moz-transition: opacity 0.3s;
 	transition: opacity 0.3s;
 }
 
-#game-tile:hover .hover-style #figcaption { 
-	cursor: pointer;
-	opacity: 1;
-}
+#game-tile:hover .hover-style .figcaption { opacity: 1; }
 
 #trending .content { background-color: rgba(0,0,0,0.75); }
 
