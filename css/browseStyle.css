@@ -38,9 +38,12 @@
 
 .game-card {
     display: inline-block;
-    width: 300px;
-    height: 200px;
+    width: 21vw;
+    height: 9.8152vw;
+    min-width: 300px;
+    min-height: 140.2173px;
     background-color: teal;
+    background-size: contain;
     margin: 9px;
     padding: 0;
 }
@@ -74,16 +77,16 @@
 
 .game-details {
     height: 100%;
-    width: 60%;
+    width: 70%;
     float: left;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.8);
 }
 
 .hex-ratings-vert {
     height: 100%;
-    width: 40%;
+    width: 30%;
     float: right;
-    background-color: rgba(0,0,0,0.6);
+    background-color: rgba(0,0,0,0.8);
 }
 
 .hex-ratings-vert p {
@@ -108,7 +111,8 @@
     letter-spacing: 1px;
     outline: none;
     position: absolute;
-    bottom: 5px;
+    left: 0;
+    bottom: -3vh;
     -webkit-transition: all 0.3s;
     -moz-transition: all 0.3s;
     transition: all 0.3s;
@@ -122,4 +126,30 @@
 .btn-1a:hover, .btn-1a:active {
     color: purple;
     background: #fff;
+}
+
+/* custom checkbox */
+
+.custom-checkbox {
+    -webkit-appearance: none;
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid blue;
+    padding: 7px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+}
+
+.custom-checkbox:checked {
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid blue;
+}
+
+.custom-checkbox:checked:after {
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    bottom: -2px;
+    left: 2px;
+    color: black;
 }
