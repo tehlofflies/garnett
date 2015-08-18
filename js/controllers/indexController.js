@@ -54,7 +54,10 @@ app.controller('newGames', ['$scope', function($scope) {
 app.controller('rankedGames', ['$scope', function($scope) {
 	$scope.games = [
 	{
-		name: 'Something'
+		name: 'Something',
+		img: 'image.jpg',
+		url: 'http://something.com/image',
+		upvotes: 1
 	},
 	{
 		name: 'Something'
